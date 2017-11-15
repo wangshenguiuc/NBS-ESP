@@ -3,7 +3,7 @@
 ### About
 This directory contains the code and resources of the following paper:
 
-<i>"RDifferentially mutated networks reveal complex mechanisms for cancer heterogeneity
+<i>"Differentially mutated networks reveal complex mechanisms for cancer heterogeneity
 ". Under review. </i>
 
 1. NBS2.0 is a network-based tumor stratification algorithm. It takes a somatic mutation profile as input. It then cluster tumors by integrating molecular networks with this somatic mutation profile.
