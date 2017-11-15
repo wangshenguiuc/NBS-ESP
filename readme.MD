@@ -14,14 +14,19 @@ This directory contains the code and resources of the following paper:
 ### Overview of the Model
 We introduce NBS2 algorithm to address the contamination of frequently mutated genes in network-based patient stratification. Our solution to alleviate the noise from frequently mutated genes is only using selective key gene interactions rather than all human gene interactions in network propagation. 
 
+<p align="center">
+<img height =230 src="figures/framework.png"> 
+</p>
+
+
 # Step 1. Construct a small and restrictive gene network
 Briefly, we selected gene interactions according to their mutually exclusive patterns in cancer because these genes are most likely to be evolved in cancer development. Since frequently mutated genes are unlikely to exhibit mutually exclusive patterns with their neighbors, their interactions are discarded by our method, thus diminishing the influence of frequently mutated genes on other genes. 
 
 # Step 2. Network propogation based on the constructed network
-Somatic mutations for each patient are represented as a binary (1,0) states on genes, in which a ‘1’ indicates a gene for which mutation (a single-nucleotide base change or the insertion or deletion of bases) has occurred in the tumor relative to germ line. For each patient, we used network propagation to smooth the influence of each mutation over its neighborhood in the small and restrictive network.
+Somatic mutations for each patient are represented as a binary (1,0) states on genes, in which a â€˜1â€™ indicates a gene for which mutation (a single-nucleotide base change or the insertion or deletion of bases) has occurred in the tumor relative to germ line. For each patient, we used network propagation to smooth the influence of each mutation over its neighborhood in the small and restrictive network.
 
 # Step 3. Patient stratification based on the 'network-smoothed' profile
-We then clustered the resulting matrix of ‘network-smoothed’ profile into a predefined number of subtypes (k=2,3,...,6) (Fig. 2b). Specifically, a compact representation of each patient was first calculated by applying singular value decomposition to ‘network-smoothed’ profile. K-means++ was then used to cluster patients into subtypes based on those compact vectors. 
+We then clustered the resulting matrix of â€˜network-smoothedâ€™ profile into a predefined number of subtypes (k=2,3,...,6) (Fig. 2b). Specifically, a compact representation of each patient was first calculated by applying singular value decomposition to â€˜network-smoothedâ€™ profile. K-means++ was then used to cluster patients into subtypes based on those compact vectors. 
 
 # Step 4. Detecting differentially mutated subnetworks
 We then detected signature subnetworks by comparing the smoothed mutation profiles of different subtypes and validated these subnetworks using various of experimental datasets. 
