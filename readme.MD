@@ -15,7 +15,7 @@ This directory contains the code and resources of the following paper:
 We introduce NBS2 algorithm to address the contamination of frequently mutated genes in network-based patient stratification. Our solution to alleviate the noise from frequently mutated genes is only using selective key gene interactions rather than all human gene interactions in network propagation. 
 
 <p align="center">
-<img  src="figure/framework.png" width="800" height="600" > 
+<img  src="figure/framework.png" width="800" height="400" > 
 </p>
 
 
