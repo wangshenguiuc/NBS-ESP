@@ -43,6 +43,8 @@ For further details, see Online Methods of our paper.
 ## Data
   - **Pre-processed TCGA somatic mutation profile:** We provide pre-processed TCGA somatic mutation profile of 22 cancer types at (/data/TCGA_survival/). This should be sufficient for reproducing our results.   
    - **Sample network:** We use inBioMap as the sample network in this paper. The original network can be obtained at (/data/network/InBio-Map_Entrez.sif). The constructed small and restrictive network of 22 cancer types can be accessed at (/data/ME_network/)
+   
+   All the TCGA data is obtained from firehose.
   
 **Important Note:** all data is for research-purpose only.
 
