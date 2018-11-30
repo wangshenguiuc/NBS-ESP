@@ -9,7 +9,7 @@ This directory contains the code and resources of the following paper:
 1. NBS2 is a network-based tumor stratification algorithm. It takes a somatic mutation profile as input. It then clusters tumors by integrating molecular networks with this somatic mutation profile.
 2. The default network is a recently published PPI network [1]. This software also supported user-defined network.
 3. Our experimental results are based on TCGA data. A collection of pre-processed TCGA somatic mutation profiles can be obtained here (/data/ME_network/)
-3. Please contact Sheng Wang swang141@illinois.edu if you have issues using this software.
+3. Please contact Sheng Wang swang91@stanford.edu if you have issues using this software.
 
 ## Overview of the Model
 We introduce NBS2 algorithm to address the contamination of frequently mutated genes in network-based patient stratification. Our solution to alleviate the noise from frequently mutated genes is only using selective key gene interactions rather than all human gene interactions in network propagation. 
