@@ -76,9 +76,10 @@ if length(clst_list)==1
     res_pv = ones(1,12);
     return
 end
-if x==1
-    error('r script error %s',y);
-    
+
+% system() should return status code 0 when there's no error
+if x ~= 0
+    error('r script error: %s',y);    
 else
     res_pv = dlmread(method_prefix);
 end
