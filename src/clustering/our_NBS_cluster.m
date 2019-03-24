@@ -245,7 +245,7 @@ fout = fopen([cluster_pv_folder,NBS_prefix],'w');
 for nclst=min_nclst:max_nclst
     
     
-    indClust_prefix = [cancer_type;
+    indClust_prefix = [cancer_type];
     
     
     indClust = aggregate_cluster(consen_indClust{nclst});
